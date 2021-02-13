@@ -1,0 +1,84 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto; }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+  display: flex;
+  justify-content: center; }
+  body .wrapper {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    body .wrapper .heading {
+      width: 100%; }
+      body .wrapper .heading h1 {
+        padding: 20px; }
+    body .wrapper .container {
+      background: white;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between; }
+      body .wrapper .container .box1 {
+        display: flex;
+        width: 20%;
+        height: 200px; }
+        body .wrapper .container .box1 .box2 {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px; }
+          body .wrapper .container .box1 .box2 .placeholder {
+            background: #21a0ca;
+            border-radius: 10px 10px 0 0;
+            width: 100%; }
+            body .wrapper .container .box1 .box2 .placeholder img {
+              width: 100%;
+              max-height: 100%;
+              padding: 0;
+              margin: 0; }
+          body .wrapper .container .box1 .box2 .text {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            background-color: #e4dede;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            body .wrapper .container .box1 .box2 .text p {
+              padding: 0;
+              margin: 0; }
+            @media screen and (max-width: 768px) {
+              body .wrapper .container .box1 .box2 .text p {
+                padding: revert;
+                margin: revert; } }
+      @media screen and (max-width: 768px) {
+        body .wrapper .container .box1 {
+          width: 33.33%;
+          height: 300px;
+          padding-bottom: 20px; } }
+      @media screen and (max-width: 375px) {
+        body .wrapper .container .box1 {
+          width: 100%;
+          height: 400px; }
+          body .wrapper .container .box1 p {
+            font-size: 24px; } }
+    body .wrapper .paragraph {
+      width: 100%; }
+      body .wrapper .paragraph p {
+        padding-left: 20px; }
+  @media screen and (max-width: 375px) {
+    body .wrapper {
+      padding: 30%; } }
+
+/*# sourceMappingURL=style.css.map */
